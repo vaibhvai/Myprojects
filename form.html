@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Number</title>
+</head>
+<body>
+    <h1>Guess The Number</h1>
+    <p>
+        we have selected a random number
+        1-100.see if you can guess it
+    </p>
+   <form id="form">
+    <label for="guessField">
+        Enter a guess:
+    </label>
+    <input type="text" id="guessField" >
+    <input type="submit" value="submit guess" id="submitguess">
+   </form>
+   <script>
+    let x = 45;
+    var attempt=2;
+    
+    document.getElementById("submitguess").onclick=function (){
+        let y =document.getElementById("guessField").value;
+        if(x==y){
+            alert("congratulation");
+        }else if(x<y){
+          alert("try small number");
+          if(attempt===0){
+            alert("you are blocked!")
+          }attempt--
+          console.log(attempt);
+          }
+        else{
+            alert("try greater number");
+            if(attempt===0){
+            alert("you are blocked!")
+          }attempt--
+          console.log(attempt);
+            
+        }
+
+    }
+   </script>
+</body>
+</html>
