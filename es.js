@@ -1,10 +1,17 @@
 const  squareofNumber= (number)=> number*number;
-console.log(squareofNumber(10));
+
 
 const isEven = number =>{
     if (number%2===0){
-        return true
+        return true;
     }
-    return false
+    return false;
 }
-console.log(isEven(100));
+
+
+const details={skil:'js',location:'vikhroli'}
+const newDetails={...details,name:'vaibhavi'};
+
+
+const fruits=["banna","apple","orange"];
+for(i in fruitsZ)
